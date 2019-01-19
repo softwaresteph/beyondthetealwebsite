@@ -3,26 +3,74 @@
 <head>  
     <style>
         body {
-            background-color: #3ab795;
+            background-image:url("neko-tai-1082487-unsplash.jpg");
+            background-repeat: no-repeat, repeat;
+            /* background-color: #0E4A71; Dark blue */
+            background-size: cover;
         }
-        p {
-            /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-            font-family: cursive;
+        .main {
+            font-family: 'Garamond', 'Verdana', Helvetica, Arial, sans-serif;
+            /* font-family: cursive; */
             font-size: 40px;
         }
         .center {
             margin: auto;
             width: 50%;
             text-align: center;
-            padding: 250px 0;
+        }
+        .credit {
+            font-family: sans-serif;
+            color: rgba(233, 207, 197, 0.466);
+            text-align: right;
+            padding-right: 20px;
+        }
+        /* https://stackoverflow.com/a/6182661 */
+        .outer {
+            display: table;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .inner {
+            margin-left: auto;
+            margin-right: auto;
+            /* background-color: #0E4A7180; */
+            background-color: rgba(233, 207, 197, 0.466);
+            /* opacity: 50%; */
+            width: 100%;
+            /* height: 400px; */
+            /*whatever width you want*/
+        }
+        /* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <p class="center">
-        If you think about it,<br/>
-        we're all a Work In Progress, <br/>
-        aren't we?
-    </p>
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <p class="center main">
+                    If you think about it,<br/>
+                    we're all a work-in-progress, <br/>
+                    aren't we?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="credit">Photo by Neko Tai on Unsplash</p>
+    </div>
 </body>
 </html>
