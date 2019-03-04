@@ -3,12 +3,13 @@
 <head>  
     <style>
         body {
-            background-image:url("neko-tai-1082487-unsplash.jpg");
-            background-repeat: no-repeat, repeat;
-            /* background-color: #0E4A71; Dark blue */
+            background: url("neko-tai-1082487-unsplash.jpg") no-repeat center center fixed;
+            background-color: rgb(210, 193, 183);
+            /* background-size: cover; This worked great for web but not mobile*/
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
-        }
-        p {
             font-family: 'Garamond', 'Verdana', Helvetica, Arial, sans-serif;
         }
         a { 
@@ -21,14 +22,21 @@
         a:hover {
             text-decoration: underline;
         }
+        h1 {
+            font-size: 2.5em;
+        }
         .links {
-            font-size: 20px;
             position: absolute;
             z-index: 100;
+            text-decoration: none;
+            font-weight:normal;
+        }
+        span.nobr {
+            white-space: nowrap;
         }
         .main {
-            /* font-family: cursive; */
-            font-size: 40px;
+            text-decoration: none;
+            font-weight:normal;
         }
         .center {
             margin: auto;
@@ -74,19 +82,19 @@
     </style>
 </head>
 <body>
-    <div class="links">
-            <a href="https://github.com/beyondtheteal" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="https://stackoverflow.com/users/1703677/beyondtheteal" target="_blank">Stack Overflow</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/steph-carter-551a1a23/" target="_blank">Linked In</a>
-    </div>
+    <h2 class="links">
+            <span class="nobr"><a href="https://github.com/beyondtheteal" target="_blank">GitHub</a>&nbsp;&nbsp;</span>
+            |&nbsp;&nbsp;<span class="nobr"><a href="https://stackoverflow.com/users/1703677/beyondtheteal" target="_blank">Stack Overflow</a>&nbsp;&nbsp;</span>
+            |&nbsp;&nbsp;<span class="nobr"><a href="https://www.linkedin.com/in/steph-carter-551a1a23/" target="_blank">Linked In</a></span>
+    </h2>
     <div class="outer">
         <div class="middle">
             <div class="inner">
-                <p class="center main">
+                <h1 class="center main">
                     If you think about it,<br/>
                     we're all a work-in-progress, <br/>
                     aren't we?
-                </p>
+                </h1>
             </div>
         </div>
     </div>
