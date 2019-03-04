@@ -8,8 +8,25 @@
             /* background-color: #0E4A71; Dark blue */
             background-size: cover;
         }
-        .main {
+        p {
             font-family: 'Garamond', 'Verdana', Helvetica, Arial, sans-serif;
+        }
+        a { 
+            color: inherit; /* Get rid of the default color blue */
+            text-decoration: none; /* Get rid of the default underline */
+        }
+        a:visited {
+            color: rgb(82, 82, 82);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .links {
+            font-size: 20px;
+            position: absolute;
+            z-index: 100;
+        }
+        .main {
             /* font-family: cursive; */
             font-size: 40px;
         }
@@ -17,12 +34,6 @@
             margin: auto;
             width: 50%;
             text-align: center;
-        }
-        .credit {
-            font-family: sans-serif;
-            color: rgba(233, 207, 197, 0.466);
-            text-align: right;
-            padding-right: 20px;
         }
         /* https://stackoverflow.com/a/6182661 */
         .outer {
@@ -54,9 +65,20 @@
             bottom: 0;
             width: 100%;
         }
+        .credit {
+            font-family: sans-serif;
+            color: rgba(233, 207, 197, 0.466);
+            text-align: right;
+            padding-right: 20px;
+        }
     </style>
 </head>
 <body>
+    <div class="links">
+            <a href="https://github.com/beyondtheteal" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://stackoverflow.com/users/1703677/beyondtheteal" target="_blank">Stack Overflow</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/steph-carter-551a1a23/" target="_blank">Linked In</a>
+    </div>
     <div class="outer">
         <div class="middle">
             <div class="inner">
