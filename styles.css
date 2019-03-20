@@ -3,7 +3,7 @@
     It is a red flag if this page contains lots of colors
 **/
 body { 
-    font-family: 'Garamond', 'Verdana', Helvetica, Arial, sans-serif;
+    font-family: 'Garamond', 'Baskerville', 'Verdana', Helvetica, Arial, sans-serif;
 }
 a { 
     color: inherit; /* Get rid of the default color blue */
