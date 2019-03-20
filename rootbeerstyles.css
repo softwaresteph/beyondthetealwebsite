@@ -1,0 +1,21 @@
+/** 
+    This doc is intended to hold page-specific backgrounds and colors
+**/ 
+
+.background {
+    background: url("opt-lauren-mancke-60627-unsplash.jpg") no-repeat center center fixed;
+    background-color: rgb(68, 55, 50);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.innerStyle {
+    background-color: rgba(94, 76, 70, 0.527);
+    color: rgb(233, 233, 233);
+}
+
+.faintFont {
+    color: rgba(94, 76, 70, 0.6);
+}

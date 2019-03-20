@@ -1,0 +1,45 @@
+/**
+    This doc is intended to be for styles that are used on every page. 
+    It is a red flag if this page contains lots of colors
+**/
+body { 
+    font-family: 'Garamond', 'Verdana', Helvetica, Arial, sans-serif;
+}
+a { 
+    color: inherit; /* Get rid of the default color blue */
+    text-decoration: none; /* Get rid of the default underline */
+}
+a:visited {
+    color: rgb(82, 82, 82);
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 2.5em;
+}
+.links {
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    text-decoration: none;
+    font-weight:normal;
+}
+span.nobr {
+    white-space: nowrap;
+}
+span.avoidwrap {
+    display:inline-block;
+}
+
+.altHomepage {
+    padding-left: 20px;
+    float: left;
+}
+
+.credit {
+    text-align: right;
+    padding-right: 20px;
+    float: right;
+}

@@ -1,0 +1,53 @@
+/**
+    This CSS doc is intended to be for the overall layout of a page. The centered divs, the links at the top. 
+    It is a red flag if this page contains lots of colors
+**/
+.main {
+    text-decoration: none;
+    font-weight:normal;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.right {
+    margin: auto;
+    width: 80%;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* https://stackoverflow.com/a/6182661 */
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.middleVertical {
+    display: table-cell;
+    vertical-align: middle;
+}
+.innerLayout {
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #0E4A7180; */
+    /* opacity: 50%; */
+    width: 100%;
+    /* height: 400px; */
+    /*whatever width you want*/
+}
+
+/* https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+.footer {
+    font-family: sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
